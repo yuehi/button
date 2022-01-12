@@ -4,7 +4,7 @@ export const HeaderOnly = (props) => {
   const { children } = props;
   return (
     <>
-      <Header></Header>
+      <Header />
       {children}
     </>
   );

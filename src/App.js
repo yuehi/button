@@ -1,5 +1,4 @@
-import { Route } from "react-router-dom";
-import { Header } from "./component/atoms/layout/Header";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./styles.css";
 
 const user = {
@@ -14,5 +13,9 @@ const user = {
 };
 
 export default function App() {
-  return <Header />;
+  return (
+    <BrowserRouter>
+      <Route />
+    </BrowserRouter>
+  );
 }

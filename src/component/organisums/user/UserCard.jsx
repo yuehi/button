@@ -23,7 +23,7 @@ export const UserCard = (props) => {
 
 const SDl = styled.dl`
   text-align: left;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   dt {
     float: left;
   }

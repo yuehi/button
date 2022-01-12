@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Header = () => {
   return (
-    <SHeader>
-      <SLink to="/">HOME</SLink>
-      <SLink to="/users">USERS</SLink>
-    </SHeader>
+    <BrowserRouter>
+      <SHeader>
+        <SLink to="/">HOME</SLink>
+        <SLink to="/">USERS</SLink>
+      </SHeader>
+    </BrowserRouter>
   );
 };
 
