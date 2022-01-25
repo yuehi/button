@@ -8,10 +8,15 @@ export const Top = () => {
   const history = useHistory();
   const { setUserInfo } = useContext(UserContext);
 
-  const onClickAdmin = () => setUserInfo({ isAdmin: true });
-  history.push("/users");
-  const onClickGeneral = () => setUserInfo({ isAdmin: false });
-  history.push("/users");
+  const onClickAdmin = () => {
+    setUserInfo({ isAdmin: true });
+    history.push("/users");
+  };
+
+  const onClickGeneral = () => {
+    setUserInfo({ isAdmin: false });
+    history.push("/users");
+  };
 
   return (
     <SContainer>
